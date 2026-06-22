@@ -1,5 +1,6 @@
 require("dotenv").config();
-console.log(process.env.MONGO_URI);
+console.log("MONGO_URI exists:", !!process.env.MONGO_URI);
+console.log("All env keys:", Object.keys(process.env).filter(key => key.includes("MONGO")));
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
