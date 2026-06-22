@@ -2,7 +2,7 @@ const taskForm = document.getElementById("taskForm");
 const taskList = document.getElementById("taskList");
 
 // Backend URL
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "https://task-management-backend-b7dh.onrender.com/api/tasks";
 
 // Load all tasks
 async function loadTasks() {
